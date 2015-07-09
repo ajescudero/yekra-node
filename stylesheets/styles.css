@@ -1,0 +1,118 @@
+/*————-ALL——————*/
+
+html,
+body,
+form,
+fieldset,
+legend,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Georgia;
+    background: #faf7e1;
+}
+
+h1 {
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #807740;
+}
+
+form {
+    width: 950px;
+}
+
+fieldset {
+    border: none;
+    margin: 5px;
+    padding: 20px;
+    background: #f2e9ae;
+}
+
+legend {
+    font-size: 160%;
+    color: #c92a06;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+label {
+    float: left;
+    font-size: 80%;
+    margin-right: 5px;
+}
+/*————-Order Section———*/
+
+#order ul li {
+    float: left;
+}
+
+#order label {
+    padding-top: 5px;
+    width: 100px;
+}
+
+#order input {
+    width: 150px;
+    margin-right: 15px;
+}
+/*————Delivery Section————*/
+
+#delivery label {
+    width: 100px;
+}
+
+#delivery input {
+    width: 150px;
+}
+
+#delivery textarea {
+    width: 150px;
+}
+/*————-Payment Section———–*/
+
+#payment label {
+    padding-top: 5px;
+    width: 100px;
+}
+
+#payment #send {
+    display: block;
+    margin-top: 10px;
+    margin-left: 130px;
+}
+/*———-Card SubSection———-*/
+
+#card legend {
+    margin-left: 130px;
+    font-size: 110%;
+}
+
+#card ul li {
+    float: left;
+    margin-right: 30px;
+}
+
+#card label {
+    padding-top: 0px;
+    width: 50px;
+}
+
+.message {
+    color: #c92a06;
+    padding-top: 5px;
+}
+
+.purchase_section span {
+    color: green;
+    text-align: center;
+}

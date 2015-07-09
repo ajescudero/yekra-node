@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Yekra - Ajax/Jquery Test</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+</head>
+
+<body>
+    <h1>Yekra - Ajax/Jquery Test</h1>
+    <form id="order_form" action="/purchases" method="post">
+        <fieldset id="order">
+            <legend> Order </legend>
+            <ul>
+                <li>
+                    <label for="pizza">Select Pizza: </label>
+                    <input type="text" name="pizza" list="pizza" placeholder="Click to select" />
+                    <datalist id="pizza">
+                        <option value="Veggie Delight" />
+                        <option value="Meat Madness" />
+                        <option value="Cheese" />
+                    </datalist>
+                </li>
+                <li>
+                    <label for="size">Select Size: </label>
+                    <input type="text" name="size" list="size" placeholder="Click to select" />
+                    <datalist id="size">
+                        <option value="Large" />
+                        <option value="Medium" />
+                        <option value="Small" />
+                    </datalist>
+                </li>
+                <li>
+                    <label for="quantity">Select Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" max="10" min="1" alue="1" />
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset id="delivery">
+            <legend>Delivery Information </legend>
+            <ul>
+                <li>
+                    <label for="Customer">Name: </label>
+                    <input type="text" name="Customer" id="Customer" />
+                </li>
+                <li>
+                    <label for="Email">Email: </label>
+                    <input type="email" name="Email" id="Email" placeholder="name@example.com" />
+                </li>
+                <li>
+                    <label for="Phone">Phone: </label>
+                    <input type="telephone" name="Phone" id="Phone" />
+                </li>
+                <li>
+                    <label for="Add">Street Address: </label>
+                    <textarea id="Add" rows="6"></textarea>
+                </li>
+                <li>
+                    <label for="Sate">State: </label>
+                    <input type="text" list="state" name="State" id="State" placeholder="Pick a State" />
+                    <datalist id="state">
+                        <option value="California" />
+                        <option value="Oregon" />
+                        <option value="Washington" />
+                    </datalist>
+                    <li>
+                        <label for="zip">ZIP Code: </label>
+                        <input type="text" id="zip" />
+                    </li>
+                    <li>
+                        <label for="time">Delivery Time:</label>
+                        <input type="time" />
+                    </li>
+            </ul>
+        </fieldset>
+        <fieldset id="payment" class="purchase_section">
+            <legend>Payment</legend>
+            <ul>
+                <li>
+                    <fieldset id="card">
+                        <legend>Card Type</legend>
+                        <ul>
+                            <li>
+                                <label for="visa"> <img src="images/visa.png" />
+                                </label>
+                                <input type="radio" name="card" id="visa" />
+                            </li>
+                            <li>
+                                <label for="amx"><img src="images/amx.png" />
+                                </label>
+                                <input type="radio" name="card" id="amx" />
+                            </li>
+                            <li>
+                                <label for="mc"><img src="images/mc.png" />
+                                </label>
+                                <input type="radio" name="card" id="mc" />
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <li>
+                        <label for="cardNum">Card Number: </label>
+                        <input type="text" id="cardNum" placeholder="xxx-xxx-xxx-xxx" />
+                    </li>
+                    <li>
+                        <label for="security">Security Code: </label>
+                        <input type="text" id="security" placeholder="Enter 3 digit code" />
+                    </li>
+                    <li>
+                        <input type="submit" value="Place Order" id="send" class="purchase_btn" />
+                        <div class="message"></div>
+                    </li>
+                </li>
+            </ul>
+            <div id="resultado"></div>
+        </fieldset>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="javascripts/form.js"></script>
+</body>
+
+</html>
